@@ -1,9 +1,8 @@
 <?php
 
-namespace Xepare\PterodactylApiAddon;
+namespace Wising\PelicanApiAddon;
 
 use Illuminate\Support\ServiceProvider;
-use Spatie\LaravelPackageTools\Package;
 
 class PterodactylApiAddonServiceProvider extends ServiceProvider
 {

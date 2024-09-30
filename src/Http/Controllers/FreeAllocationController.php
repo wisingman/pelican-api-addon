@@ -1,11 +1,11 @@
 <?php
 
-namespace Xepare\PterodactylApiAddon\Http\Controllers;
+namespace Wising\PelicanApiAddon\Http\Controllers;
 
-use Pterodactyl\Models\Node;
-use Pterodactyl\Transformers\Api\Application\AllocationTransformer;
-use Pterodactyl\Http\Controllers\Api\Application\ApplicationApiController;
-use Pterodactyl\Http\Requests\Api\Application\Allocations\GetAllocationsRequest;
+use App\Models\Node;
+use App\Transformers\Api\Application\AllocationTransformer;
+use App\Http\Controllers\Api\Application\ApplicationApiController;
+use App\Http\Requests\Api\Application\Allocations\GetAllocationsRequest;
 
 class FreeAllocationController extends ApplicationApiController
 {

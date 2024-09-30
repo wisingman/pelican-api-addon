@@ -1,26 +1,30 @@
 {
-    "name": "rene-roscher/pterodactyl-api-addon",
+    "name": "wisingman/pelican-api-addon",
     "description": "This package brings an API interface to the application API in order to be able to create API tokens for a user",
     "keywords": [
-        "PterodactylApiAddon",
-        "laravel",
-        "pterodactyl-api-addon"
+        "PelicanAPIAddon"
     ],
-    "homepage": "https://github.com/pterodactylapiaddon/pterodactyl-api-addon",
+    "homepage": "https://github.com/wisingman/pelican-api-addon",
     "license": "MIT",
     "authors": [
         {
+            "name": "Max Moore (wisingman)",
+            "email": "maxmooredotuk@gmail.com",
+            "role": "Fork to Pelican Panel"
+        },
+        {
             "name": "Rene Roscher",
             "email": "roscher794@gmail.com",
-            "role": "Developer"
+            "role": "Original Developer"
         }
     ],
     "require": {
-        "php": "^8.0|^8.1|^8.2|^8.3"
+        "php": "^8.0|^8.1|^8.2|^8.3",
+        "illuminate/support": "^9.0|^10.0|^11.0"
     },
     "autoload": {
         "psr-4": {
-            "Xepare\\PterodactylApiAddon\\": "src"
+            "Wising\\PelicanAPIAddon\\": "src"
         }
     },
     "config": {
@@ -29,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Xepare\\PterodactylApiAddon\\PterodactylApiAddonServiceProvider"
+                "Wising\\PelicanAPIAddon\\PelicanApiAddonServiceProvider"
             ]
         }
     },

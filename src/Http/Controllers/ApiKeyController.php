@@ -1,18 +1,13 @@
 <?php
 
-namespace Xepare\PterodactylApiAddon\Http\Controllers;
+namespace Wising\PelicanApiAddon\Http\Controllers;
 
-use Pterodactyl\Http\Controllers\Api\Application\ApplicationApiController;
-use Xepare\PterodactylApiAddon\Http\Requests\GetUsersApiKeysRequest;
-use Pterodactyl\Models\ApiKey;
+use App\Http\Controllers\Api\Application\ApplicationApiController;
+use Wising\PelicanApiAddon\Http\Requests\GetUsersApiKeysRequest;
+use App\Models\ApiKey;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Contracts\Encryption\Encrypter;
-use Pterodactyl\Models\User;
-use Pterodactyl\Services\Api\KeyCreationService;
-use Pterodactyl\Repositories\Eloquent\ApiKeyRepository;
-use Pterodactyl\Transformers\Api\Client\ApiKeyTransformer;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Pterodactyl\Http\Requests\Api\Client\Account\StoreApiKeyRequest;
+use App\Models\User;
+use App\Transformers\Api\Client\ApiKeyTransformer;
 
 class ApiKeyController extends ApplicationApiController
 {

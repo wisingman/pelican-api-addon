@@ -1,10 +1,9 @@
 <?php
 
+namespace Wising\PelicanApiAddon\Http\Requests;
 
-namespace Xepare\PterodactylApiAddon\Http\Requests;
-
-use Pterodactyl\Http\Requests\Api\Application\ApplicationApiRequest;
-use Pterodactyl\Services\Acl\Api\AdminAcl as Acl;
+use App\Http\Requests\Api\Application\ApplicationApiRequest;
+use App\Services\Acl\Api\AdminAcl as Acl;
 
 /**
  * Class GetUsersApiKeysRequest
