@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Xepare\PterodactylApiAddon\Http\Controllers\ApiKeyController;
-use Xepare\PterodactylApiAddon\Http\Controllers\FileController;
-use Xepare\PterodactylApiAddon\Http\Controllers\FreeAllocationController;
-use Pterodactyl\Http\Middleware\Api\Client\Server\ResourceBelongsToServer;
-use Pterodactyl\Http\Middleware\Api\Client\Server\AuthenticateServerAccess;
+use Wising\PelicanApiAddon\Http\Controllers\ApiKeyController;
+use Wising\PelicanApiAddon\Http\Controllers\FileController;
+use Wising\PelicanApiAddon\Http\Controllers\FreeAllocationController;
+use App\Http\Middleware\Api\Client\Server\ResourceBelongsToServer;
+use App\Http\Middleware\Api\Client\Server\AuthenticateServerAccess;
 
 Route::prefix('/api/application')->middleware(['api', 'throttle:api.application'])->group(function () {
 
