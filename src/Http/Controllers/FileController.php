@@ -13,7 +13,7 @@ use Wising\PelicanApiAddon\Http\Requests\WriteFileContentRequest;
 class FileController extends ClientApiController
 {
     /**
-     * @var \Pterodactyl\Repositories\Wings\DaemonFileRepository
+     * @var \App\Repositories\Wings\DaemonFileRepository
      */
     private $fileRepository;
 
@@ -31,7 +31,7 @@ class FileController extends ClientApiController
     /**
      * Writes the contents of the specified file to the server.
      *
-     * @throws \Pterodactyl\Exceptions\Http\Connection\DaemonConnectionException
+     * @throws \App\Exceptions\Http\Connection\DaemonConnectionException
      */
     public function __invoke(WriteFileContentRequest $request, Server $server): JsonResponse
     {

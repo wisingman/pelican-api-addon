@@ -7,7 +7,7 @@ use App\Services\Acl\Api\AdminAcl as Acl;
 
 /**
  * Class GetUsersApiKeysRequest
- * @package Pterodactyl\Http\Requests\Api\Application\Users
+ * @package App\Http\Requests\Api\Application\Users
  */
 class GetUsersApiKeysRequest extends ApplicationApiRequest
 {

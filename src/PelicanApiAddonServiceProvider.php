@@ -4,7 +4,7 @@ namespace Wising\PelicanApiAddon;
 
 use Illuminate\Support\ServiceProvider;
 
-class PterodactylApiAddonServiceProvider extends ServiceProvider
+class PelicanApiAddonServiceProvider extends ServiceProvider
 {
 
     /**

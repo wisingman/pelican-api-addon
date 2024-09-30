@@ -29,8 +29,8 @@ class ApiKeyController extends ApplicationApiController
      *
      * @return array
      *
-     * @throws \Pterodactyl\Exceptions\DisplayException
-     * @throws \Pterodactyl\Exceptions\Model\DataValidationException
+     * @throws \App\Exceptions\DisplayException
+     * @throws \App\Exceptions\Model\DataValidationException
      */
     public function store($user)
     {
