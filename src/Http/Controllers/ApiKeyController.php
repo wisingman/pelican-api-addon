@@ -37,7 +37,7 @@ class ApiKeyController extends ApplicationApiController
         $user = User::findOrFail($user);
 
         $token = $user->createToken(
-            request('description'),
+            request('memo'),
             request('allowed_ips')
         );
         
